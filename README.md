@@ -12,6 +12,9 @@ The entire Pro Git book, written by Scott Chacon and published by Apress, is ava
 Creative Commons Attribution Non Commercial Share Alike 3.0 license<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+### Original
+You can see the original document from [HERE](https://github.com/progit/progit/blob/master/README.rst)
+
 ## Version
 Based version of Pro Git
 
@@ -31,7 +34,8 @@ Based version of Pro Git
         Added russian titles in to ebooks maker
 
 # How to make PDF
-target lang is _ja_
+PDF target language is _**ja**_.
+It's try-and-error log.
 
 ## Download Knoppix
 Use this Live CD distro: [KNOPPIX Japanese edition](http://www.rcis.aist.go.jp/project/knoppix/)
@@ -113,23 +117,6 @@ git://github.com/progit/progit.git
 
 ## ./makepdfs ja
     ! LaTeX Error: File `xkeyval.sty' not found.
-
-## Find answer with Iceweasel
-Search with **"! LaTeX Error: File `xkeyval.sty' not found."**
-
-> http://ubuntuforums.org/showpost.php?s=de28f5695d6f36f55a9a40b4bbd43985&p=9712566&postcount=3
->
-> Re: xkeyval.sty not found xelatex
-> 
-> I solved it like this:
->
-> Code:
->  
-> <code>
-> $ apt-cache search xkeyval
-> texlive-latex-recommended - TeX Live: LaTeX recommended packages
-> $ sudo apt-get install texlive-latex-recommended
-> </code>
 
 ## install texlive-latex-recommended
     $sudo aptitude install texlive-latex-recommended
