@@ -61,7 +61,7 @@ approx. 1048 B
     $ ruby -v
     ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
 
-## install Git
+## Install Git
     $ sudo aptitude install git git-core
 ### git
     $ git --version
@@ -118,14 +118,14 @@ git://github.com/progit/progit.git
 ## ./makepdfs ja
     ! LaTeX Error: File `xkeyval.sty' not found.
 
-## install texlive-latex-recommended
+## Install texlive-latex-recommended
     $sudo aptitude install texlive-latex-recommended
 
 ## ./makepdfs ja
         Running XeTeX:
         Pass 1... failed with:
             ! Font \@tempfontb="VL PGothic/ICU" at 10.0pt not loadable: Metric (TFM) fil
-## font replace
+## Font replace
 replace 'VL Gothic' to 'IPAGothic'
 
     $ cd ~/repo/progit/latex
