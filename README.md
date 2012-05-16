@@ -40,7 +40,7 @@ It's try-and-error log.
 ## Download Knoppix
 Use this Live CD distro: [KNOPPIX Japanese edition](http://www.rcis.aist.go.jp/project/knoppix/)
 
-[KNOPPIX 6.7.1 LCAT CD ISO Image](http://ring.airnet.ne.jp/archives/linux/knoppix/iso/knoppix_v6.7.1CD_20110914-20111018.iso)
+KNOPPIX 6.7.1 LCAT CD iso Image download from [HERE](http://ring.airnet.ne.jp/archives/linux/knoppix/iso/knoppix_v6.7.1CD_20110914-20111018.iso)
 
 ### uname -a
     Linux Microknoppix 3.0.4 #1 SMP PREEMPT Mon Oct 17 07:15:29 UTC 2011 i686 GNU/Linux
