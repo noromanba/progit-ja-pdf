@@ -17,17 +17,17 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/
 ## version
 version of progit
 
-### last commit
+### based version
 	commit 92feb6631b83bd9ec52b4f9d81d6f4ff528c4e0b
 	Merge: c81c8d5 789a20c
-	Author: Scott Chacon <schacon@gmail.com>
+	Author: Scott Chacon <xxx@xxx.com>
 	Date:   Sat May 12 09:14:40 2012 -0700
 	
 	    Merge pull request #201 from PinGwynn/feature
 	    
 	    Added russian titles in to ebooks maker
 
-## ja
+### ja
 	$ tig
 	$ t
 drwxr-xr-x TAKAGI Masahiro    2011-11-29 04:13 ja
