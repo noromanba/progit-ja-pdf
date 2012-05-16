@@ -1,9 +1,48 @@
-# How to make progit PDF with Knoppix
-target lang is ja
-## Knoppix
+# About
+progit Ja PDF, powerd by Knoppix
+
+# LICENSE
+
+## Book
+http://git-scm.com/book
+The entire Pro Git book, written by Scott Chacon and published by Apress, is available here. All content is licensed under the Creative Commons Attribution Non Commercial Share Alike 3.0 license. Print versions of the book are available on Amazon.com. 
+
+http://tinyurl.com/amazonprogit
+
+## CC BY-NC-SA 3.0
+Creative Commons Attribution Non Commercial Share Alike 3.0 license
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+## version
+version of progit
+
+### last commit
+	commit 92feb6631b83bd9ec52b4f9d81d6f4ff528c4e0b
+	Merge: c81c8d5 789a20c
+	Author: Scott Chacon <schacon@gmail.com>
+	Date:   Sat May 12 09:14:40 2012 -0700
+	
+	    Merge pull request #201 from PinGwynn/feature
+	    
+	    Added russian titles in to ebooks maker
+
+## ja
+	$ tig
+	$ t
+drwxr-xr-x TAKAGI Masahiro    2011-11-29 04:13 ja
+
+
+# How to make PDF
+target lang is _ja_
+
+## download Knoppix
 use this liveCD distro
+
 http://www.rcis.aist.go.jp/project/knoppix/
+
 > knoppix_v6.7.1CD_20110914-20111018.iso
+
 http://ring.airnet.ne.jp/archives/linux/knoppix/iso/knoppix_v6.7.1CD_20110914-20111018.iso
 KNOPPIX 6.7.1 CD LCAT
 
@@ -11,7 +50,7 @@ KNOPPIX 6.7.1 CD LCAT
 	Linux Microknoppix 3.0.4 #1 SMP PREEMPT Mon Oct 17 07:15:29 UTC 2011 i686 GNU/Linux
 
 ## Knoppix makes up to bootable USB
-/usr/bin/flash-install
+	/usr/bin/flash-install
 install to usb (SD 2GB) done
 
 ## make knoppix.img after USB boot
@@ -19,12 +58,14 @@ approx. 1048 B
 
 ## install Ruby
 	$ sudo aptitude install ruby
+### ruby
 	$ ruby -v
 	ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
 
 ## install Git
 	$ sudo aptitude update
 	$ sudo aptitude install git git-core
+### git
 	$ git --version
 	git version 1.7.2.5
 
@@ -79,17 +120,20 @@ git://github.com/progit/progit.git
 ## ./makepdfs ja
 	! LaTeX Error: File `xkeyval.sty' not found.
 
-## iceweasel
-search '! LaTeX Error: File `xkeyval.sty' not found.'
+## find answer with Iceweasel
+search **'! LaTeX Error: File `xkeyval.sty' not found.'**
+
 > http://ubuntuforums.org/showpost.php?s=de28f5695d6f36f55a9a40b4bbd43985&p=9712566&postcount=3
-> Re: xkeyval.sty not found xelatex
-> I solved it like this:
->
-> Code:
->
->	$ apt-cache search xkeyval
->	texlive-latex-recommended - TeX Live: LaTeX recommended packages
->	$ sudo apt-get install texlive-latex-recommended
+
+ Re: xkeyval.sty not found xelatex
+ 
+ I solved it like this:
+
+ Code:
+
+	$ apt-cache search xkeyval
+	texlive-latex-recommended - TeX Live: LaTeX recommended packages
+	$ sudo apt-get install texlive-latex-recommended
 
 ## install texlive-latex-recommended
 	$sudo aptitude install texlive-latex-recommended
@@ -98,7 +142,7 @@ search '! LaTeX Error: File `xkeyval.sty' not found.'
 		Running XeTeX:
 		Pass 1... failed with:
 			! Font \@tempfontb="VL PGothic/ICU" at 10.0pt not loadable: Metric (TFM) fil
-## replace font
+## font replace
 	$ cd ~/repo/progit/latex
 	$ cp config.yml config.yml.org
 	vi config.yml
@@ -132,21 +176,5 @@ replace 'VL Gothic' to 'IPAGothic'
 	progit.ja.pdf
 You can see it like this:
 > $ xpdf progit.ja.pdf
-
-## progit
-### last commit
-	commit 92feb6631b83bd9ec52b4f9d81d6f4ff528c4e0b
-	Merge: c81c8d5 789a20c
-	Author: Scott Chacon <schacon@gmail.com>
-	Date:   Sat May 12 09:14:40 2012 -0700
-	
-	    Merge pull request #201 from PinGwynn/feature
-	    
-	    Added russian titles in to ebooks maker
-
-## ja
-	$ tig
-	$ t
-drwxr-xr-x TAKAGI Masahiro    2011-11-29 04:13 ja
 
 
